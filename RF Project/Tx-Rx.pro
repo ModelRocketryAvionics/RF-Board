@@ -1,4 +1,4 @@
-update=7/16/2018 1:54:28 PM
+update=2018-07-16 6:24:22 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=contrib
 LibName32=valves
 LibName33=cc2500rgpr
 LibName34=Tx-Rx-cache
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
