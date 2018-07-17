@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J2";"Pin_Header_Straight_1x16_Pitch2.54mm";1;"CONN_Left";;;
+2;"26MHz";"Crystal_SMD_Abracon_ABM3B-4pin_5.0x3.2mm";1;"Crystal";;;
+3;"C1,C2";"C_0402";2;"100pF";;;
+4;"C3,C8,C10,C13";"C_0402";4;"0.1μF";;;
+5;"C4,C11";"C_0402";2;"47pF";;;
+6;"C5,C6";"C_0402";2;"27pF";;;
+7;"C7";"C_0402";1;"1.0pF";;;
+8;"C9";"C_0402";1;"1.0 pF";;;
+9;"C12";"C_0402";1;"1.8pF";;;
+10;"C14,C16,C17";"C_0402";3;"220μF";;;
+11;"C15";"C_0402";1;"1.5pF";;;
+12;"L1";"L_0402";1;"1,2nH";;;
+13;"L2,L3";"L_0402";2;"1.2nH";;;
+14;"R1";"R_0201";1;"50 kOhm";;;
+15;"U1";"CC2500";1;"CC2500RGPR";;;
+16;"U2";"u.fl_male";1;"U.FL_male";;;
+17;"J1";"Pin_Header_Straight_1x16_Pitch2.54mm";1;"CONN_Right";;;

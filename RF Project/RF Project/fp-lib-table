@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name transciever_chip)(type KiCad)(uri "$(KIPRJMOD)/transciever_chip.pretty")(options "")(descr ""))
+)
