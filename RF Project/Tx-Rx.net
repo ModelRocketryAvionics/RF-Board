@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:/OneDrive/Projects/_ModelRocket/Github/RF-Board/RF Project/Tx-Rx.sch")
-    (date "7/16/2018 2:21:49 PM")
+    (date "7/16/2018 7:26:02 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -290,14 +290,14 @@
         (pin (num 2) (name GND) (type input))
         (pin (num 3) (name DATA) (type input)))))
   (libraries
+    (library (logical conn)
+      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
       (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical Tx-Rx-cache)
-      (uri Tx-Rx-cache.lib))
     (library (logical cc2500rgpr)
-      (uri cc2500rgpr.lib))
-    (library (logical conn)
-      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri "D:\\OneDrive\\Projects\\_ModelRocket\\Github\\RF-Board\\RF Project\\cc2500rgpr.lib"))
+    (library (logical Tx-Rx-cache)
+      (uri "D:\\OneDrive\\Projects\\_ModelRocket\\Github\\RF-Board\\RF Project\\Tx-Rx-cache.lib")))
   (nets
     (net (code 1) (name RF_N)
       (node (ref U1) (pin 13))
