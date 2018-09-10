@@ -33,11 +33,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:cc2500rgpr
 LIBS:Tx-Rx-cache
+LIBS:rocketGPS
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Model Rocket Transciever Design"
 Date "2018-07-13"
 Rev "V01"
@@ -134,7 +135,7 @@ U 1 1 5B4AA2E3
 P 8200 4100
 F 0 "26Mhtz1" H 8200 4250 50  0000 C CNN
 F 1 "Crystal" H 8200 3950 50  0000 C CNN
-F 2 "Crystals:Crystal_SMD_Abracon_ABM3B-4pin_5.0x3.2mm" H 8200 4100 50  0001 C CNN
+F 2 "transciever_chip:CC2500" H 8200 4100 50  0001 C CNN
 F 3 "" H 8200 4100 50  0001 C CNN
 	1    8200 4100
 	0    1    1    0   
@@ -155,7 +156,7 @@ U 1 1 5B4AAA24
 P 8100 5400
 F 0 "C1" H 8125 5500 50  0000 L CNN
 F 1 "100pF" H 8125 5300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 8138 5250 50  0001 C CNN
+F 2 "RF_Transciever:VENUS634FLPX" H 8138 5250 50  0001 C CNN
 F 3 "" H 8100 5400 50  0001 C CNN
 	1    8100 5400
 	0    -1   -1   0   
@@ -724,11 +725,7 @@ NoConn ~ 1350 2250
 NoConn ~ 1350 1150
 NoConn ~ 1350 1250
 NoConn ~ 1350 1550
-NoConn ~ 1350 1650
 NoConn ~ 1350 1750
-NoConn ~ 1350 1850
-NoConn ~ 1350 1950
-NoConn ~ 1350 2050
 NoConn ~ 1350 2150
 Wire Wire Line
 	2800 2150 2900 2150
@@ -791,4 +788,40 @@ F 3 "" H 1050 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1050 3600 1050 3550
+$Sheet
+S 1350 4300 1475 800 
+U 5B569403
+F0 "GPS" 60
+F1 "GPS.sch" 60
+F2 "3V3" I L 1350 4500 60 
+F3 "PWR_GND" I L 1350 4825 60 
+F4 "TX" I R 2825 4475 60 
+F5 "RX" I R 2825 4600 60 
+$EndSheet
+Text GLabel 1300 4825 0    60   Input ~ 0
+PWR_GND
+Text GLabel 1300 4500 0    60   Input ~ 0
+PWR_3V3
+Wire Wire Line
+	1300 4500 1350 4500
+Wire Wire Line
+	1300 4825 1350 4825
+NoConn ~ 1350 1650
+Text GLabel 2925 4475 2    60   Input ~ 0
+TX
+Text GLabel 2925 4600 2    60   Input ~ 0
+RX
+Wire Wire Line
+	2925 4600 2825 4600
+Wire Wire Line
+	2825 4475 2925 4475
+Text GLabel 1250 1850 0    60   Input ~ 0
+RX
+Text GLabel 1250 1950 0    60   Input ~ 0
+TX
+Wire Wire Line
+	1350 1850 1250 1850
+Wire Wire Line
+	1250 1950 1350 1950
+NoConn ~ 1350 2050
 $EndSCHEMATC

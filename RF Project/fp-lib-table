@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name transciever_chip)(type KiCad)(uri "$(KIPRJMOD)/transciever_chip.pretty")(options "")(descr ""))
+  (lib (name RF_Transciever)(type KiCad)(uri "C:/Users/Steven/Documents/Github/RF-Board/RF Project/RF_Transciever.pretty")(options "")(descr ""))
 )
