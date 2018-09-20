@@ -2,7 +2,7 @@
 
   (general
     (links 106)
-    (no_connects 12)
+    (no_connects 9)
     (area 60.150001 62.3 133.85 132.700001)
     (thickness 1.6)
     (drawings 27)
@@ -3020,7 +3020,7 @@
     (connect_pads yes (clearance 0.2))
     (min_thickness 0.6)
     (keepout (tracks allowed) (vias allowed) (copperpour not_allowed))
-    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 92.75 112.25) (xy 96.25 112.25) (xy 99.25 109.25) (xy 99.25 103.25) (xy 102.25 103.25)
